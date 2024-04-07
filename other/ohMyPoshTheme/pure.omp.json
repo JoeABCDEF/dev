@@ -108,11 +108,12 @@
 	],
 	"console_title_template": "{{if .Root}}(Admin){{end}} {{.PWD}}",
 	"transient_prompt": {
+		"background": "transparent",
 		"foreground": "#B48EAD",
 		"foreground_templates": [
 			"{{ if gt .Code 0 }}#BF616A{{ end }}"
 		],
-		"template": "\u276f "
+		"template": "{{ .Shell }}:{{.ShellVersion}} \u276f</>_: "
 	},
 	"version": 2
 }
